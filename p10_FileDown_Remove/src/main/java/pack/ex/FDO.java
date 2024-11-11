@@ -13,7 +13,7 @@ import javax.servlet.jsp.PageContext;
 
 public class FDO {
 
-	private static final String SAVEFOLDER = "D:\\Java_Web_AI\\silsp\\jsp\\p10_FileDown_Remove\\src\\main\\webapp\\fileStorage";
+	private static final String SAVEFOLDER = "D:\\Java_Web_AI\\silsp\\jsp_FileStorage";
 
 	// 다운로드 메서드 시작
 	public void mtdDownload(HttpServletRequest req, HttpServletResponse res, JspWriter out, PageContext pageContext) {
@@ -30,7 +30,7 @@ public class FDO {
 			res.setHeader("Accept-Ranges", "bytes");
 			req.getHeader("User-Agent");
 			res.setContentType("application/smnet;charset=utf-8");
-			res.setHeader("Content-Disposition", 					"attachment;fileName=" + new String(fName.getBytes("UTF-8"), "ISO-8859-1"));
+			res.setHeader("Content-Disposition", "attachment;fileName=" + new String(fName.getBytes("UTF-8"), "ISO-8859-1"));
 
 			out.clear();
 			out = pageContext.pushBody();

@@ -20,7 +20,8 @@
 <%
 //String saveFolder = "";
 
-String saveFolder = "D:\\Java_Web_AI\\silsp\\jsp\\p10_FileDown_Remove\\src\\main\\webapp\\fileStorage";
+String saveFolder = "D:\\Java_Web_AI\\silsp\\jsp_FileStorage";
+
 int maxSize = 5*1024*1024;   // 5MByte 까지 최대 업로드 허용
 String encType = "UTF-8";
 
